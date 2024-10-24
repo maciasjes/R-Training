@@ -88,14 +88,3 @@ url <- "https://github.com/TRACE-LAC/TRACE-LAC-data/raw/refs/heads/main/otros/da
 
 covid19 <- readr::read_rds(url)
 
-# move to the project directory
-cd Projects/website
-
-# initiate the upstream tracking of the project on the GitHub repo
-git remote add origin https://github.com/hansenjohnson/website.git
-
-# pull all files from the GitHub repo (typically just readme, license, gitignore)
-git pull origin master
-
-# set up GitHub repo to track changes on local machine
-git push -u origin master
