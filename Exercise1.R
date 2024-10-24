@@ -88,3 +88,8 @@ url <- "https://github.com/TRACE-LAC/TRACE-LAC-data/raw/refs/heads/main/otros/da
 
 covid19 <- readr::read_rds(url)
 
+##hello
+dat <- read_excel("Datos/datos_covid.xlsx")
+
+#Funciones básicas de tydyverse
+dat %>% glimpse()
